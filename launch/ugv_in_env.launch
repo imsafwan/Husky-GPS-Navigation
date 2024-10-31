@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <arg name="robot_namespace" default="/"/>
+
+  <arg name="x" default="0.0"/>
+  <arg name="y" default="0.0"/>
+  <arg name="z" default="0.0"/>
+  <arg name="yaw" default="0.0"/>
+
+
+  
+
+  <!-- Optionally disable teleop control -->
+  <arg name="joystick" default="true" />
+
+  <group ns="$(arg robot_namespace)">
+    
+    <!-- Load the URDF file into the parameter server -->
+    <param name="robot_description" command="$(find xacro)/xacro $(find husky_description)/urdf/husky.urdf.xacro" />
+
+    
+    <!-- Spawn the Husky model in Gazebo -->
+    <node name="spawn_husky_model" pkg="gazebo_ros" type="spawn_model"
+        args="-x $(arg x)
+              -y $(arg y)
+              -z $(arg z)
+              -Y $(arg yaw)
+              -unpause
+              -urdf
+              -param robot_description
+              -model husky
+              -robot_namespace $(arg robot_namespace)" />
+    
+    <!-- Include control and teleoperation -->
+    <include file="$(find husky_control)/launch/control.launch"/>
+    
+    <!-- Additional nodes for specific accessories -->
+    <group if="$(optenv HUSKY_REALSENSE_ENABLED 0)">
+      <include file="$(find husky_gazebo)/launch/realsense.launch" />
+    </group>
+
+  </group>
+
+</launch>

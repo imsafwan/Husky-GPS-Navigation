@@ -1,0 +1,12 @@
+<launch>
+    <env name="GAZEBO_MODEL_PATH" value="$(find gps_navigation_husky)/models:$(optenv GAZEBO_MODEL_PATH)" />
+    
+    <!-- Launch the world -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <!-- Specify the world file path -->
+        <arg name="world_name" value="$(find gps_navigation_husky)/worlds/test_world_v1.world"/>
+    </include>
+
+    <!-- Launch UGV -->
+    <include file="$(find gps_navigation_husky)/launch/ugv_in_env.launch"/>
+</launch>
