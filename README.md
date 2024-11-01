@@ -12,3 +12,10 @@
    cd ~/catkin_ws/src/gps_navigation_husky/Scripts/
    python3 target_navigation.py
    ```
+
+
+3. **Set Target to start navigation**
+      ```bash
+      cd src/gps_navigation_husky/Scripts/ 
+      python3 map_plot.py 
+      ```

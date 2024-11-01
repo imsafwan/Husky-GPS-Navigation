@@ -11,7 +11,7 @@ from actionlib_msgs.msg import GoalStatusArray
 
 def gps_to_cartesian(lat, lon):
     # Convert GPS coordinates to UTM using pyproj
-    transformer = Transformer.from_crs("epsg:4326", "epsg:32610", always_xy=True)
+    transformer = Transformer.from_crs("epsg:4326", "epsg:32718", always_xy=True)
     utm_x, utm_y = transformer.transform(lon, lat)
     print('GPS to UTM ', utm_x, utm_y)
     rospy.loginfo(f"GPS to UTM: UTM X = {utm_x}, UTM Y = {utm_y}")
@@ -84,7 +84,7 @@ def perform_navigation_task(lat_lon_tuple):
         rospy.loginfo(f"Received GPS coordinates: Latitude = {lat}, Longitude = {lon}")
 
         
-        utm_initial_x, utm_initial_y = gps_to_cartesian(38.0413, -75.375)
+        utm_initial_x, utm_initial_y = gps_to_cartesian(38.041764, -75.373154)
         
         
         
