@@ -25,7 +25,7 @@ sudo apt update
 sudo apt install ros-noetic-husky-simulator ros-noetic-husky-navigation
 ```
 #### Build the Workspace
-````bash
+```bash
 cd ~/catkin_ws
 catkin_make
 source ~/catkin_ws/devel/setup.bash
