@@ -1,4 +1,5 @@
-![Alt Text](models/grass_plane_v1/gps_nav.png)
+![Alt Text](models/grass_plane_v1/gps_nav.png){ width=50% }
+
 # Project Instructions
 
 
