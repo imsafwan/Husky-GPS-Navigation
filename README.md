@@ -1,4 +1,4 @@
-![Alt Text](models/grass_plane_v1/gps_nav.png){ width=50% }
+<img src="models/grass_plane_v1/gps_nav.png" alt="GPS Nav" width="300"/>
 
 # Project Instructions
 
