@@ -1,4 +1,4 @@
-![Alt Text](model/gps_nav.png)
+![Alt Text](models/gps_nav.png)
 # Project Instructions
 
 
