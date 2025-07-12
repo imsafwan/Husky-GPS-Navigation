@@ -1,7 +1,6 @@
 <div align="center">
   <img src="models/grass_plane_v1/gps_nav.png" alt="GPS Nav" width="500"/>
   <br>
-  <img src="assets/my_image.png" alt="Alt Text" width="300"/>
 </div>
 
 # Project Instructions
