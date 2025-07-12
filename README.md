@@ -1,4 +1,4 @@
-<img src="models/grass_plane_v1/gps_nav.png" alt="GPS Nav" width="300"/>
+<img src="models/grass_plane_v1/gps_nav.png" alt="GPS Nav" width="500"/>
 
 # Project Instructions
 
