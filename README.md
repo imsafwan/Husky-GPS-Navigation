@@ -50,10 +50,8 @@ source ~/catkin_ws/devel/setup.bash
    cd ~/catkin_ws/src/gps_navigation_husky/Scripts/
    python3 target_navigation.py
    ```
+---
+### Hardware Deployment
 
-
-3. **Set Target to start navigation**
-      ```bash
-      cd src/gps_navigation_husky/Scripts/ 
-      python3 map_plot.py 
-      ```
+The same code architecture is compatible for deployment on real hardware for GPS-based navigation.
+[Demo Video](https://www.youtube.com/watch?v=OlJv8bZSwIM&t=4s)
