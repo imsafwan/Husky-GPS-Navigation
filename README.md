@@ -53,5 +53,10 @@ source ~/catkin_ws/devel/setup.bash
 ---
 ### Hardware Deployment
 
-The same code architecture is compatible for deployment on real hardware for GPS-based navigation.
-[Demo Video](https://www.youtube.com/watch?v=OlJv8bZSwIM&t=4s)
+<p>The same code architecture is compatible for deployment on real hardware for GPS-based navigation.</p>
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=OlJv8bZSwIM&t=4s">
+    <img src="https://img.youtube.com/vi/OlJv8bZSwIM/0.jpg" alt="YouTube Video" width="480"/>
+  </a>
+</p>
